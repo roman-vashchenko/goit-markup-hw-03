@@ -68,10 +68,6 @@ body {
   overflow: hidden;
 }
 
-.header {
-  background: var(--secondary-color);
-}
-
 .header-list .current {
   color: var(--accent-color);
 }
@@ -79,6 +75,7 @@ body {
 /* Header */
 
 .header {
+  background: var(--secondary-color);
   border-bottom: 1px solid #ececec;
 }
 
