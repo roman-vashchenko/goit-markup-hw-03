@@ -39,7 +39,6 @@ img {
   display: block;
 }
 
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -53,7 +52,7 @@ body {
 }
 
 .section {
-  padding: 94px 94px;
+  padding: 94px 0px;
 }
 
 .visually-hidden {
@@ -69,11 +68,19 @@ body {
   overflow: hidden;
 }
 
+.header {
+  background: var(--secondary-color);
+}
+
 .header-list .current {
   color: var(--accent-color);
 }
 
 /* Header */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .logo-link {
   color: #000000;
@@ -120,6 +127,13 @@ body {
 
 /* Hero */
 
+.hero {
+  background: #2f303a;
+}
+.hero_elements {
+  padding: 200px 452px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -128,7 +142,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
-  background: #2f303a;
+  margin-bottom: 30px;
 }
 .hero-btn {
   font-family: inherit;
@@ -138,7 +152,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-color);
   background: var(--accent-color);
-  cursor: pointer;
+  display: block;
+  width: 216px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  border-color: var(--accent-color);
 }
 
 .hero-btn:hover,
@@ -149,21 +168,30 @@ body {
 
 /* Features */
 
+.features {
+  background: #F5F5F5;
+}
 .features-title {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  width: 270px;
 }
 
 /* Services */
+
+.services {
+  background: #f5f5f5;
+}
 
 .services-title {
   font-weight: 700;
@@ -172,17 +200,34 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 /* Our team */
+
+.team {
+  background: #f5f4fa;
+}
+
+.team-item {
+  text-align: center;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+}
 
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.team-img {
+  margin-bottom: 30px;
 }
 
 .team-title-name {
@@ -191,6 +236,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -198,12 +244,17 @@ body {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  padding-bottom: 30px;
 }
 
 /* Footer */
 
 .footer {
   background: #2f303a;
+}
+
+.footer_elements {
+  padding: 60px 0;
 }
 
 .footer-logo {
@@ -213,6 +264,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer-logo span {
@@ -224,6 +277,7 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 9px;
 }
 
 .footer-mail,
@@ -232,6 +286,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .footer-mail:hover,
@@ -248,6 +306,14 @@ body {
 
 /* Projects */
 
+.filter {
+  background: #f5f5f5;
+}
+
+.filter-list {
+  margin-bottom: 50px;
+}
+
 .filter-btn {
   font-family: inherit;
   font-weight: 500;
@@ -256,7 +322,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
-  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 25px;
+  border-style: none;
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -265,12 +335,22 @@ body {
   background: var(--accent-color);
 }
 
+.project-item {
+  width: 370px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project-img {
+  margin-bottom: 20px;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .project-text {
