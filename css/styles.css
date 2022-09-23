@@ -45,14 +45,15 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 .section {
-  padding: 94px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -185,6 +186,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-color);
   background: var(--accent-color);
+
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -203,7 +205,7 @@ body {
 /* Features */
 
 .features {
-  background: #f5f5f5;
+  background: var(--secondary-color);
 }
 
 .features-list {
@@ -231,17 +233,13 @@ body {
 
 .services {
   padding-bottom: 94px;
-  background: #f5f5f5;
+  background: var(--secondary-color);
 }
 
 .services-list {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.services-list .item {
-  width: calc((100%-30px) / 3);
+  justify-content: space-between;
+  
 }
 
 .services-title {
@@ -320,6 +318,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -363,7 +362,7 @@ body {
 /* Projects */
 
 .filter {
-  background: #f5f5f5;
+  background: var(--secondary-color);
 }
 
 .filter-list {
@@ -381,6 +380,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
+  
   display: block;
   margin: 0 auto;
   padding: 6px 22px;
@@ -397,15 +397,14 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.project-list .item {
-  flex-basis: calc(100% / 9);
-  border-bottom: 1px solid #eeeeee;
-}
 
-.project-img {
-  margin-bottom: 20px;
+.description {
+  padding-top: 20px;
+  border: 1px solid #EEEEEE;
 }
 
 .project-title {
