@@ -37,6 +37,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -45,7 +47,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -95,7 +97,7 @@ body {
   align-items: center;
 }
 
-.header-list .item {
+.header-container .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -132,6 +134,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
   display: block;
 }
 
@@ -146,6 +149,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+
   display: block;
 }
 
@@ -165,10 +169,14 @@ body {
   background: #2f303a;
 }
 .hero-elements {
-  padding: 200px 452px;
+  padding: 200px 0px;
 }
 
 .hero-title {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -176,17 +184,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
-  margin-bottom: 30px;
 }
 .hero-btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background: var(--accent-color);
-
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -194,6 +193,14 @@ body {
   margin: 0 auto;
   border-radius: 4px;
   border-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+  background: var(--accent-color);
 }
 
 .hero-btn:hover,
@@ -204,29 +211,28 @@ body {
 
 /* Features */
 
-.features {
-  background: var(--secondary-color);
-}
-
 .features-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .features-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .features-text {
+  width: 270px;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  width: 270px;
 }
 
 /* Services */
@@ -238,18 +244,18 @@ body {
 
 .services-list {
   display: flex;
-  justify-content: space-between;
-  
+  gap: 30px;
 }
 
 .services-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
 }
 
 /* Our team */
@@ -260,7 +266,7 @@ body {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .team-list .item {
@@ -270,27 +276,28 @@ body {
   background: #ffffff;
 }
 
+.team-description {
+  padding: 30px;
+}
+
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
-}
-
-.team-img {
-  margin-bottom: 30px;
 }
 
 .team-title-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .team-text {
@@ -298,18 +305,18 @@ body {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  padding-bottom: 30px;
 }
 
 /* Footer */
 
 .footer {
+  padding: 60px 0;
   background: #2f303a;
 }
 
-.footer_elements {
+/* .footer_elements {
   padding: 60px 0;
-}
+} */
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -328,11 +335,12 @@ body {
 }
 
 .footer-text {
+  margin-bottom: 9px;
+
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-bottom: 9px;
 }
 
 .footer-mail,
@@ -373,6 +381,12 @@ body {
 }
 
 .filter-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 22px;
+  border-style: none;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -380,12 +394,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background: #f5f4fa;
-  
-  display: block;
-  margin: 0 auto;
-  padding: 6px 22px;
-  border-style: none;
-  border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -397,23 +405,22 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 30px;
 }
 
-
 .description {
-  padding-top: 20px;
-  border: 1px solid #EEEEEE;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .project-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-bottom: 4px;
 }
 
 .project-text {
